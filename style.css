@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#textEmail {
+    bottom: -25px;
+    left: 25px;
+    color: red;
+    position: absolute;
+}
+
+.title {
+    margin-top: 40px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    white-space: pre;
+}
+
+.span {
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+.email {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.email input {
+    padding-left: 25px;
+    width: 390px;
+    height: 50px;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #d7dbe8;
+    border-style: solid;
+}
+
+::placeholder {
+    color: #d7dbe8;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.email button {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(217, 44%, 96%);
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.buttonSub:hover {
+    box-shadow: hsl(223, 100%, 88%) 0px 1px 2px 0px, hsl(223, 100%, 88%) 0px 2px 6px 2px;
+}
+
+.image {
+    padding-top: 5%;
+    width: 60%;
+    margin: auto;
+}
+.input-column {
+    position: relative;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    gap: 10px; 
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 5px;
+    border-style: solid;
+    background-color: #ffffff;
+    border-color: #d7dbe8;
+    min-width: 40px; 
+    cursor: pointer;
+    margin-top: 20px;   
+}
+
+.icon:hover {
+    background-color: hsl(223, 87%, 63%);
+    transition: 0.3s;
+}
+
+.icon:hover > img {
+    filter: invert(100%) sepia(0%) saturate(5626%) hue-rotate(56deg) brightness(115%) contrast(101%);
+}
+
+.icon > img {
+    transform: scale(0.6);
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    filter: invert(39%) sepia(59%) saturate(1212%) hue-rotate(199deg) brightness(106%) contrast(91%);
+}
