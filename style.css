@@ -65,7 +65,7 @@ body {
 .email input {
     padding-left: 25px;
     width: 390px;
-    height: 50px;
+    height: 45px;
     border-width: 1px;
     border-radius: 30px;
     border-color: #d7dbe8;
@@ -82,7 +82,7 @@ input:focus {
 
 .email button {
     width: 170px;
-    height: 50px;
+    height: 45px;
     border-radius: 30px;
     border-style: none;
     background-color: hsl(223, 87%, 63%);
@@ -143,3 +143,98 @@ input:focus {
     height: 30px;
     filter: invert(39%) sepia(59%) saturate(1212%) hue-rotate(199deg) brightness(106%) contrast(91%);
 }
+
+@media(max-width: 670px){
+
+    body {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .email input {
+        padding-left: 25px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .email button {
+        width: 260px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+    
+    .resolution .input {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    .resolution #textEmail {
+        padding-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .resolutionError .input{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 40px;
+    }
+
+    .resolutionError #textEmail {
+        padding-right: 5px;
+        margin-bottom: 25px;
+    }
+
+    .image {
+        padding-top: 5%;
+        width: 80%;
+        margin: auto;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        min-width: 30px; 
+        margin-top: 20px;   
+    }
+
+    .icon > img {
+        transform: scale(0.6);
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+    }
+}
+
+
